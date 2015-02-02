@@ -12,6 +12,9 @@ import string
 PROMPT_FILENAME = "prompts.txt"
 
 def importPrompts(allPrompts):
+	'''
+	Opens the prompt file and appends each line to allPrompts.
+	'''
 	inFile = open(PROMPT_FILENAME, 'r', 0)
 	prompts_raw = inFile.read()
 	prompts_raw = prompts_raw.splitlines()
